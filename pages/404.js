@@ -1,25 +1,25 @@
-import Footer from '@/components/footer';
-import Navbar from '@/components/navBar';
+
 import Head from 'next/head' ;
+import Link from 'next/link';
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function notFound() {
   return (
     <div className ="main container-fluid">
      <Head>
-      <title>HOME</title>
+      <title>404</title>
      </Head>
        
        {/* main start here */}
-      <div className = "home">
+      <div className = "not-found">
         {/* main starts here */}  
 
       <div >
        <div>
-       <h3>This is home page ok!</h3>
+       <h3>Oooooops : Page not found</h3>
         <p>
-          This is the best home page in the world with next js
+          go back to <Link href = "/">Home</Link> page
         </p>
         <button className = "btn btn-info">Click</button>
        </div>
